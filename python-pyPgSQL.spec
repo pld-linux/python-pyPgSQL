@@ -1,6 +1,6 @@
 
 %include	/usr/lib/rpm/macros.python
-%define 	module pyPgSQL
+%define 	module	pyPgSQL
 
 Summary:	Python DB-API 2.0 PostgreSQL module
 Summary(pl):	Modu³ PostgreSQL dla Pythona zgodny z DB-API 2.0
