@@ -4,7 +4,7 @@ Summary:	Python DB-API 2.0 PostgreSQL module
 Summary(pl):	Modu³ PostgreSQL dla Pythona zgodny z DB-API 2.0
 Name:		python-%{module}
 Version:	2.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pypgsql/%{module}-%{version}.tar.gz
