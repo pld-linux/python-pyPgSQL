@@ -1,7 +1,7 @@
 %define 	module	pyPgSQL
 
 Summary:	Python DB-API 2.0 PostgreSQL module
-Summary(pl):	Modu≥ PostgreSQL dla Pythona zgodny z DB-API 2.0
+Summary(pl.UTF-8):   Modu≈Ç PostgreSQL dla Pythona zgodny z DB-API 2.0
 Name:		python-%{module}
 Version:	2.4
 Release:	3
@@ -26,14 +26,14 @@ demand. The second module, PgSQL, provides the DB-API 2.0 compliant
 interface and support for various PostgreSQL data types, such as INT8,
 NUMERIC, MONEY, BOOL, ARRAYS, etc. This module is written in Python.
 
-%description -l pl
-pyPgSQL to pakiet dwÛch modu≥Ûw dostarczaj±cych zgodny z Python DB-API
-2.0 interfejs do baz danych PostgreSQL. Pierwszy modu≥, libpq,
-eksportuje API C PostgreSQL-a do Pythona. Ten modu≥ jest napisany w C
-i moøe byÊ wkompilowany w Pythona lub ≥adowany dynamicznie na
-ø±danie. Drugi modu≥, PgSQL, dostarcza zgodny z DB-API 2.0 interfejs
-oraz wsparcie dla rÛønych typÛw danych PostgreSQL-a, takich jak INT8,
-NUMERIC, MONEY, BOOL, ARRAYS itp. Ten modu≥ jest napisany w Pythonie.
+%description -l pl.UTF-8
+pyPgSQL to pakiet dw√≥ch modu≈Ç√≥w dostarczajƒÖcych zgodny z Python DB-API
+2.0 interfejs do baz danych PostgreSQL. Pierwszy modu≈Ç, libpq,
+eksportuje API C PostgreSQL-a do Pythona. Ten modu≈Ç jest napisany w C
+i mo≈ºe byƒá wkompilowany w Pythona lub ≈Çadowany dynamicznie na
+≈ºƒÖdanie. Drugi modu≈Ç, PgSQL, dostarcza zgodny z DB-API 2.0 interfejs
+oraz wsparcie dla r√≥≈ºnych typ√≥w danych PostgreSQL-a, takich jak INT8,
+NUMERIC, MONEY, BOOL, ARRAYS itp. Ten modu≈Ç jest napisany w Pythonie.
 
 %prep
 %setup -q -n pypgsql
