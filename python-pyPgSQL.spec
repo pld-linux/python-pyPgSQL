@@ -1,7 +1,7 @@
 %define 	module	pyPgSQL
 
 Summary:	Python DB-API 2.0 PostgreSQL module
-Summary(pl.UTF-8):   Moduł PostgreSQL dla Pythona zgodny z DB-API 2.0
+Summary(pl.UTF-8):	Moduł PostgreSQL dla Pythona zgodny z DB-API 2.0
 Name:		python-%{module}
 Version:	2.4
 Release:	3
