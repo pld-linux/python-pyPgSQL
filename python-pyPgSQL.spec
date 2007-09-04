@@ -11,7 +11,8 @@ Source0:	http://dl.sourceforge.net/pypgsql/%{module}-%{version}.tar.gz
 # Source0-md5:	82670f6f1652aa4766fdaec2cb43debd
 URL:		http://pypgsql.sourceforge.net/
 BuildRequires:	postgresql-devel >= 7.0
-BuildRequires:	python-devel >= 2.0
+BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
 Requires:	postgresql-libs
 %pyrequires_eq	python-modules
 Requires:	python-mx-DateTime
@@ -58,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc Announce ChangeLog README examples/*.py
 %{py_sitedir}/*.egg-info
 %dir %{py_sitedir}/%{module}
-%dir %{py_sitedir}/%{module}/libpq
 %{py_sitedir}/%{module}/*.py[co]
+%dir %{py_sitedir}/%{module}/libpq
 %{py_sitedir}/%{module}/libpq/*.py[co]
 %attr(755,root,root) %{py_sitedir}/%{module}/libpq/*.so
