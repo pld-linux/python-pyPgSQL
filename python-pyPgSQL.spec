@@ -3,12 +3,12 @@
 Summary:	Python DB-API 2.0 PostgreSQL module
 Summary(pl.UTF-8):	Moduł PostgreSQL dla Pythona zgodny z DB-API 2.0
 Name:		python-%{module}
-Version:	2.4
-Release:	3
+Version:	2.5.1
+Release:	1
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pypgsql/%{module}-%{version}.tar.gz
-# Source0-md5:	56d4003e5192de9a09de468a7641bd11
+# Source0-md5:	82670f6f1652aa4766fdaec2cb43debd
 URL:		http://pypgsql.sourceforge.net/
 BuildRequires:	postgresql-devel >= 7.0
 BuildRequires:	python-devel >= 2.0
@@ -36,7 +36,7 @@ oraz wsparcie dla różnych typów danych PostgreSQL-a, takich jak INT8,
 NUMERIC, MONEY, BOOL, ARRAYS itp. Ten moduł jest napisany w Pythonie.
 
 %prep
-%setup -q -n pypgsql
+%setup -q -n %{module}-%{version}
 
 %build
 %{__python} setup.py build
@@ -55,7 +55,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README TODO examples/*.py
+%doc Announce ChangeLog README examples/*.py
+%{py_sitedir}/*.egg-info
 %dir %{py_sitedir}/%{module}
 %dir %{py_sitedir}/%{module}/libpq
 %{py_sitedir}/%{module}/*.py[co]
