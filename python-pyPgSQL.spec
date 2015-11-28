@@ -40,14 +40,12 @@ NUMERIC, MONEY, BOOL, ARRAYS itp. Ten moduł jest napisany w Pythonie.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 find $RPM_BUILD_ROOT%{py_sitedir} -type f -name "*.py" | xargs rm
 
