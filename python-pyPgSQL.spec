@@ -10,6 +10,7 @@ Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pypgsql/%{module}-%{version}.tar.gz
 # Source0-md5:	82670f6f1652aa4766fdaec2cb43debd
 URL:		http://pypgsql.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	postgresql-devel >= 7.0
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
